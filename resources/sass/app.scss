@@ -1,0 +1,742 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+@tailwind components;
+
+/**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+
+@import "font";
+
+/**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+@tailwind utilities;
+
+/**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */
+
+.vue-ads-flex {
+    display: flex;
+}
+.vue-ads-flex-row {
+    flex-direction: row;
+}
+.vue-ads-flex-col {
+    flex-direction: column;
+}
+.vue-ads-justify-center {
+    justify-content: center;
+}
+.vue-ads-flex-grow {
+    flex-grow: 1;
+}
+.vue-ads-h-1 {
+    height: 0.25rem;
+}
+.vue-ads-h-2 {
+    height: 0.5rem;
+}
+.vue-ads-h-3 {
+    height: 0.75rem;
+}
+.vue-ads-h-4 {
+    height: 1rem;
+}
+.vue-ads-h-5 {
+    height: 1.25rem;
+}
+.vue-ads-h-6 {
+    height: 1.5rem;
+}
+.vue-ads-h-8 {
+    height: 2rem;
+}
+.vue-ads-h-10 {
+    height: 2.5rem;
+}
+.vue-ads-h-12 {
+    height: 3rem;
+}
+.vue-ads-h-16 {
+    height: 4rem;
+}
+.vue-ads-h-24 {
+    height: 6rem;
+}
+.vue-ads-h-32 {
+    height: 8rem;
+}
+.vue-ads-h-48 {
+    height: 12rem;
+}
+.vue-ads-h-64 {
+    height: 16rem;
+}
+.vue-ads-h-full {
+    height: 100%;
+}
+.vue-ads-max-w-screen {
+    max-width: 100vw;
+}
+.vue-ads-min-h-screen {
+    min-height: 100vh;
+}
+.vue-ads--mr-0 {
+    margin-right: 0;
+}
+.vue-ads--ml-0 {
+    margin-left: 0;
+}
+.vue-ads--mr-1 {
+    margin-right: -0.25rem;
+}
+.vue-ads--ml-1 {
+    margin-left: -0.25rem;
+}
+.vue-ads--mr-2 {
+    margin-right: -0.5rem;
+}
+.vue-ads--ml-2 {
+    margin-left: -0.5rem;
+}
+.vue-ads--mr-3 {
+    margin-right: -0.75rem;
+}
+.vue-ads--ml-3 {
+    margin-left: -0.75rem;
+}
+.vue-ads--mr-4 {
+    margin-right: -1rem;
+}
+.vue-ads--ml-4 {
+    margin-left: -1rem;
+}
+.vue-ads--mr-5 {
+    margin-right: -1.25rem;
+}
+.vue-ads--ml-5 {
+    margin-left: -1.25rem;
+}
+.vue-ads--mr-6 {
+    margin-right: -1.5rem;
+}
+.vue-ads--ml-6 {
+    margin-left: -1.5rem;
+}
+.vue-ads--mr-8 {
+    margin-right: -2rem;
+}
+.vue-ads--ml-8 {
+    margin-left: -2rem;
+}
+.vue-ads--mr-10 {
+    margin-right: -2.5rem;
+}
+.vue-ads--ml-10 {
+    margin-left: -2.5rem;
+}
+.vue-ads--mr-12 {
+    margin-right: -3rem;
+}
+.vue-ads--ml-12 {
+    margin-left: -3rem;
+}
+.vue-ads--mr-16 {
+    margin-right: -4rem;
+}
+.vue-ads--ml-16 {
+    margin-left: -4rem;
+}
+.vue-ads--mr-20 {
+    margin-right: -5rem;
+}
+.vue-ads--ml-20 {
+    margin-left: -5rem;
+}
+.vue-ads--mr-24 {
+    margin-right: -6rem;
+}
+.vue-ads--ml-24 {
+    margin-left: -6rem;
+}
+.vue-ads--mr-32 {
+    margin-right: -8rem;
+}
+.vue-ads--ml-32 {
+    margin-left: -8rem;
+}
+.vue-ads--mr-64 {
+    margin-right: -16rem;
+}
+.vue-ads--ml-64 {
+    margin-left: -16rem;
+}
+.vue-ads-overflow-x-hidden {
+    overflow-x: hidden;
+}
+.vue-ads-pt-0 {
+    padding-top: 0;
+}
+.vue-ads-pb-0 {
+    padding-bottom: 0;
+}
+.vue-ads-pt-1 {
+    padding-top: 0.25rem;
+}
+.vue-ads-pb-1 {
+    padding-bottom: 0.25rem;
+}
+.vue-ads-pt-2 {
+    padding-top: 0.5rem;
+}
+.vue-ads-pb-2 {
+    padding-bottom: 0.5rem;
+}
+.vue-ads-pt-3 {
+    padding-top: 0.75rem;
+}
+.vue-ads-pb-3 {
+    padding-bottom: 0.75rem;
+}
+.vue-ads-pt-4 {
+    padding-top: 1rem;
+}
+.vue-ads-pb-4 {
+    padding-bottom: 1rem;
+}
+.vue-ads-pt-5 {
+    padding-top: 1.25rem;
+}
+.vue-ads-pb-5 {
+    padding-bottom: 1.25rem;
+}
+.vue-ads-pt-6 {
+    padding-top: 1.5rem;
+}
+.vue-ads-pb-6 {
+    padding-bottom: 1.5rem;
+}
+.vue-ads-pt-8 {
+    padding-top: 2rem;
+}
+.vue-ads-pb-8 {
+    padding-bottom: 2rem;
+}
+.vue-ads-pt-10 {
+    padding-top: 2.5rem;
+}
+.vue-ads-pb-10 {
+    padding-bottom: 2.5rem;
+}
+.vue-ads-pt-12 {
+    padding-top: 3rem;
+}
+.vue-ads-pb-12 {
+    padding-bottom: 3rem;
+}
+.vue-ads-pt-16 {
+    padding-top: 4rem;
+}
+.vue-ads-pb-16 {
+    padding-bottom: 4rem;
+}
+.vue-ads-pt-20 {
+    padding-top: 5rem;
+}
+.vue-ads-pb-20 {
+    padding-bottom: 5rem;
+}
+.vue-ads-pt-24 {
+    padding-top: 6rem;
+}
+.vue-ads-pb-24 {
+    padding-bottom: 6rem;
+}
+.vue-ads-pt-32 {
+    padding-top: 8rem;
+}
+.vue-ads-pb-32 {
+    padding-bottom: 8rem;
+}
+.vue-ads-pt-64 {
+    padding-top: 16rem;
+}
+.vue-ads-pb-64 {
+    padding-bottom: 16rem;
+}
+.vue-ads-fixed {
+    position: fixed;
+}
+.vue-ads-pin-t {
+    top: 0;
+}
+.vue-ads-pin-b {
+    bottom: 0;
+}
+.vue-ads-w-0 {
+    width: 0;
+}
+.vue-ads-w-1 {
+    width: 0.25rem;
+}
+.vue-ads-w-2 {
+    width: 0.5rem;
+}
+.vue-ads-w-3 {
+    width: 0.75rem;
+}
+.vue-ads-w-4 {
+    width: 1rem;
+}
+.vue-ads-w-5 {
+    width: 1.25rem;
+}
+.vue-ads-w-6 {
+    width: 1.5rem;
+}
+.vue-ads-w-8 {
+    width: 2rem;
+}
+.vue-ads-w-10 {
+    width: 2.5rem;
+}
+.vue-ads-w-12 {
+    width: 3rem;
+}
+.vue-ads-w-16 {
+    width: 4rem;
+}
+.vue-ads-w-24 {
+    width: 6rem;
+}
+.vue-ads-w-32 {
+    width: 8rem;
+}
+.vue-ads-w-48 {
+    width: 12rem;
+}
+.vue-ads-w-64 {
+    width: 16rem;
+}
+.vue-ads-w-full {
+    width: 100%;
+}
+.vue-ads-z-0 {
+    z-index: 0;
+}
+.vue-ads-z-10 {
+    z-index: 10;
+}
+.vue-ads-z-20 {
+    z-index: 20;
+}
+.vue-ads-z-30 {
+    z-index: 30;
+}
+.vue-ads-z-40 {
+    z-index: 40;
+}
+.vue-ads-z-50 {
+    z-index: 50;
+}
+.vue-ads-inset-r-0 {
+    right: 0;
+}
+.vue-ads-inset-l-0 {
+    left: 0;
+}
+.vue-ads-inset-r-1 {
+    right: 0.25rem;
+}
+.vue-ads-inset-l-1 {
+    left: 0.25rem;
+}
+.vue-ads-inset-r-2 {
+    right: 0.5rem;
+}
+.vue-ads-inset-l-2 {
+    left: 0.5rem;
+}
+.vue-ads-inset-r-3 {
+    right: 0.75rem;
+}
+.vue-ads-inset-l-3 {
+    left: 0.75rem;
+}
+.vue-ads-inset-r-4 {
+    right: 1rem;
+}
+.vue-ads-inset-l-4 {
+    left: 1rem;
+}
+.vue-ads-inset-r-5 {
+    right: 1.25rem;
+}
+.vue-ads-inset-l-5 {
+    left: 1.25rem;
+}
+.vue-ads-inset-r-6 {
+    right: 1.5rem;
+}
+.vue-ads-inset-l-6 {
+    left: 1.5rem;
+}
+.vue-ads-inset-r-8 {
+    right: 2rem;
+}
+.vue-ads-inset-l-8 {
+    left: 2rem;
+}
+.vue-ads-inset-r-10 {
+    right: 2.5rem;
+}
+.vue-ads-inset-l-10 {
+    left: 2.5rem;
+}
+.vue-ads-inset-r-12 {
+    right: 3rem;
+}
+.vue-ads-inset-l-12 {
+    left: 3rem;
+}
+.vue-ads-inset-r-16 {
+    right: 4rem;
+}
+.vue-ads-inset-l-16 {
+    left: 4rem;
+}
+.vue-ads-inset-r-24 {
+    right: 6rem;
+}
+.vue-ads-inset-l-24 {
+    left: 6rem;
+}
+.vue-ads-inset-r-32 {
+    right: 8rem;
+}
+.vue-ads-inset-l-32 {
+    left: 8rem;
+}
+.vue-ads-inset-r-48 {
+    right: 12rem;
+}
+.vue-ads-inset-l-48 {
+    left: 12rem;
+}
+.vue-ads-inset-r-64 {
+    right: 16rem;
+}
+.vue-ads-inset-l-64 {
+    left: 16rem;
+}
+.vue-ads-transition[data-v-2b288898] {
+    transition: left 0.2s, right 0.2s;
+    -webkit-transition: left 0.2s, right 0.2s;
+    -moz-transition: left 0.2s, right 0.2s;
+    -o-transition: left 0.2s, right 0.2s;
+}
+.vue-ads-transition[data-v-0ad34e2d] {
+    transition: width 0.2s, margin-left 0.2s, margin-right 0.2s;
+    -webkit-transition: width 0.2s, margin-left 0.2s, margin-right 0.2s;
+    -moz-transition: width 0.2s, margin-left 0.2s, margin-right 0.2s;
+    -o-transition: width 0.2s, margin-left 0.2s, margin-right 0.2s;
+}
+
+// Snack CSS
+.snackbar {
+    --primary: #c849f4;
+    --background: #353535;
+    --text: #e3e3e3;
+    --font: "Roboto", sans-serif;
+    --times: 1rem;
+    --padd: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: var(--background);
+    color: var(--text);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: fixed;
+    min-height: var(--times);
+    padding: var(--padd);
+    border-radius: 8px;
+    z-index: 1000 !important;
+}
+@media screen and (max-width: 576px) {
+    .snackbar {
+        border-radius: 0;
+        width: calc(100% - (2 * var(--padd)));
+    }
+}
+@media screen and (min-width: 576px) {
+    .snackbar.bottom,
+    .snackbar.top {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .snackbar.bottom-left,
+    .snackbar.top-left {
+        left: 1rem;
+    }
+    .snackbar.bottom-right,
+    .snackbar.top-right {
+        right: 1rem;
+    }
+}
+.snackbar[class*="bottom"] {
+    bottom: 1rem;
+}
+.snackbar[class*="top"] {
+    top: 1rem;
+}
+@media screen and (max-width: 576px) {
+    .snackbar {
+        left: 0;
+    }
+    .snackbar[class*="bottom"] {
+        bottom: 0;
+    }
+    .snackbar[class*="top"] {
+        top: 0;
+    }
+}
+.snackbar .snackbar__text {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.snackbar .snackbar__action {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin: 0 0 0 1rem;
+    color: var(--primary);
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.snackbar .times {
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: var(--times);
+    width: var(--times);
+    margin-left: 1rem;
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    position: relative;
+}
+.snackbar .times:before {
+    display: block;
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    border-radius: 50%;
+    -webkit-transition: -webkit-transform 0.1s ease-in;
+    transition: transform 0.1s ease-in;
+    transition: transform 0.1s ease-in, -webkit-transform 0.1s ease-in;
+}
+.snackbar .times:hover:before {
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+.snack-enter-active,
+.snack-leave-active {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+.snack-enter,
+.snack-leave-to {
+    opacity: 0;
+}
+@media screen and (min-width: 576px) {
+    .snack-enter.bottom,
+    .snack-leave-to.bottom {
+        -webkit-transform: translateY(100%) translateX(-50%);
+        transform: translateY(100%) translateX(-50%);
+    }
+    .snack-enter.top,
+    .snack-leave-to.top {
+        -webkit-transform: translateY(-100%) translateX(-50%);
+        transform: translateY(-100%) translateX(-50%);
+    }
+}
+@media screen and (max-width: 576px) {
+    .snack-enter[class*="top"],
+    .snack-leave-to[class*="top"] {
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    .snack-enter[class*="bottom"],
+    .snack-leave-to[class*="bottom"] {
+        -webkit-transform: translateY(100%);
+        transform: translateY(100%);
+    }
+}
+@media screen and (min-width: 576px) {
+    .snack-enter[class*="-left"],
+    .snack-leave-to[class*="-left"] {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+    }
+    .snack-enter[class*="-right"],
+    .snack-leave-to[class*="-right"] {
+        -webkit-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+}
+
+// Spinner
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.base-spinner {
+    position: relative;
+    overflow: hidden;
+}
+
+.base-spinner:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    background-color: inherit;
+    width: 100%;
+    height: 100%;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.base-spinner:after {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top-color: inherit;
+    animation: spinner 0.6s linear infinite;
+    z-index: 2;
+}
+
+// NProgress
+/* Make clicks pass-through */
+#nprogress {
+    pointer-events: none;
+}
+
+#nprogress .bar {
+    background: #3490dc;
+
+    position: fixed;
+    z-index: 1031;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+    display: block;
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100%;
+    box-shadow: 0 0 10px #3490dc, 0 0 5px #3490dc;
+    opacity: 1;
+
+    -webkit-transform: rotate(3deg) translate(0px, -4px);
+    -ms-transform: rotate(3deg) translate(0px, -4px);
+    transform: rotate(3deg) translate(0px, -4px);
+}
+
+// SVG
+svg.svg-icon {
+    height: 1em;
+    margin-top: -2px;
+    pointer-events: none;
+    vertical-align: middle;
+    width: 1em;
+}
